@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:padding= "6dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="50"
+        android:padding= "6dp">
+
+        <ImageView
+            android:id="@+id/testingPic_pfcurrchallenge"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/testpic" />
+        <ImageView
+            android:id="@+id/doneTemp_pfcurrchallenge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/testingPic_pfcurrchallenge"
+            android:layout_alignBottom="@+id/testingPic_pfcurrchallenge"
+            android:visibility="invisible"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/donetemp" />
+        <ProgressBar
+            android:id="@+id/pb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fractionProgress_pfcurrchallenge"
+            style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/fractionProgress_pfcurrchallenge"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:progressDrawable="@drawable/progressbar"
+            />
+        <TextView
+            android:id="@+id/title_pfcurrchallenge"
+            style="@style/word_title"
+            android:background="#B3FFFFFF"
+            android:text="Art Challenge Name"
+            android:textSize="18dp"
+            android:layout_width="199dp"
+            android:layout_toRightOf="@+id/testingPic_pfcurrchallenge"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/fractionProgress_pfcurrchallenge"
+            style="@style/word_title"
+            android:background="#B3FFFFFF"
+            android:text="3 / 7"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/testingPic_pfcurrchallenge"
+            android:layout_below="@+id/title_pfcurrchallenge" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

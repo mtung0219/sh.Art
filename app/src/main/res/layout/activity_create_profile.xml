@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".createProfileActivity">
+
+    <TextView
+        android:id="@+id/createprofile_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Just a few more things:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/createprofile_usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/createprofile_title"
+        android:padding="8dp"
+        android:text="Choose a username:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createprofile_title" />
+
+    <com.qi.shart.EditTextCustom
+        android:id="@+id/createprofile_usernametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/createprofile_usernameLabel"
+        android:layout_alignBaseline="@+id/createprofile_usernameLabel"
+        android:layout_below="@+id/createprofile_title"
+        android:background="@drawable/textinputborder"
+        android:hint="This is the username others will see you by."
+        android:textSize="12sp"
+        android:maxLength="20"
+        android:padding="8dp" />
+    <TextView
+        android:id="@+id/usernameAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/createprofile_usernameLabel"
+        android:text="Username is available."
+        android:textSize="12sp"
+        android:textColor="@color/colorGreen"
+        android:layout_alignStart="@+id/createprofile_usernametext"
+        app:layout_constraintTop_toBottomOf="@+id/createprofile_title" />
+
+    <TextView
+        android:id="@+id/createprofile_descLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/usernameAvailable"
+        android:padding="8dp"
+        android:text="About me:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createprofile_title" />
+
+    <EditText
+        android:id="@+id/createprofile_desctext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/createprofile_descLabel"
+        android:layout_alignBaseline="@+id/createprofile_descLabel"
+        android:layout_below="@+id/createprofile_title"
+        android:ems="10"
+        android:background="@drawable/textinputborder"
+        android:hint="A short bio that people see on your profile. This is optional!"
+        android:textSize="12sp"
+        android:inputType="textMultiLine"
+        android:maxLength="150"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/createprofile_submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish making my profile!"
+        android:onClick="writeProfile"
+        android:layout_marginVertical="15dp"
+        android:layout_below="@+id/createprofile_desctext"/>
+
+</RelativeLayout>

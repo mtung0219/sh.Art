@@ -1,0 +1,682 @@
+[
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dropdownbutton_background.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\dropdownbutton_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_challengecardcirclebutton.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\challengecardcirclebutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_image_full_screen_view.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\activity_image_full_screen_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_persontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\persontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_instatemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\instatemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_dropdowntemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\dropdowntemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_linetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\linetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_challengeprofilefragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_challengeprofilefragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_slot_detail.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_slot_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_fill1.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\ic_fill1.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_item_pf_currchallenge.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\recycler_item_pf_currchallenge.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_discovertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\discovertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_addedpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\addedpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_twittertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\twittertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_platformtemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\platformtemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_item_ch_slots.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\recycler_item_ch_slots.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_fill1.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\ic_fill1.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_customdrawerlayout.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\customdrawerlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile_my_submissions_fragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_profile_my_submissions_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_datemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\datemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_discovertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\discovertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_recyler_item.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\recyler_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_timertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\timertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_dropdowntemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\dropdowntemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_liketemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\liketemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_discovertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\discovertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_mychallengestemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\mychallengestemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_addtemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\addtemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_twittertemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\twittertemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_dropdowntemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\dropdowntemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_twittertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\twittertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\font_allthingspink.ttf.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\font\\allthingspink.ttf"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\anim_fadeoutanim.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\anim\\fadeoutanim.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_discovertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\discovertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circularbutton.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\circularbutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_twittertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\twittertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\font_alwaysforever.ttf.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\font\\alwaysforever.ttf"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_mychallengestemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\mychallengestemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_discoverfragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\discoverfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile_my_challenges_fragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_profile_my_challenges_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circletemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\circletemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_addpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\addpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_addpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\addpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chtypebutton_shape.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\chtypebutton_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_persontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\persontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_linetemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\linetemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\menu_topbar.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\menu\\topbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_addpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\addpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_slot_detail_submission.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_slot_detail_submission.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_create_profile.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\activity_create_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_timeline.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_timeline.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_mychallengestemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\mychallengestemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mychallengestemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\mychallengestemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_social_media.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\activity_add_social_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_challengeprofile.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\challengeprofile.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_persontemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\persontemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_donetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\donetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_addtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\addtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_loginfragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\loginfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_likedtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\likedtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_mypicstemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\mypicstemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotateanim.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\anim\\rotateanim.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_addedpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\addedpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_linetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\linetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_platformtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\platformtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_donetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\donetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_timertemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\timertemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\menu_navbarmenu.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\menu\\navbarmenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_liketemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\liketemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_datemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\datemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spacebackground.jpg.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\spacebackground.jpg"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_timertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\timertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textinputborder.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\textinputborder.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\font_angelina.TTF.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\font\\angelina.TTF"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_in.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_instalogoofficial.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\instalogoofficial.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_submitslot.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\submitslot.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_liketemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\liketemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spashscreenbg.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\spashscreenbg.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mypicstemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\mypicstemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_imagesearchtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\imagesearchtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_fill1.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\ic_fill1.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_liketemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\liketemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_datemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\datemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_addtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\addtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\font_caviardreams.ttf.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\font\\caviardreams.ttf"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_coverphotoborder.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\coverphotoborder.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_timelineselector.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\timelineselector.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_testpic.jpg.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\testpic.jpg"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_fill1.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\ic_fill1.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chtypebutton_pressed.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\chtypebutton_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_addtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\addtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_datemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\datemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_linetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\linetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_likedtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\likedtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_navdrawer.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\navdrawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_imagesearchtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\imagesearchtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_base.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\activity_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_liketemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\liketemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_timertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\timertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_donetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\donetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_timelinerecyclerborder.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\timelinerecyclerborder.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_mainfragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\mainfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_platformtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\platformtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\anim_fadeinanim.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\anim\\fadeinanim.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_imageinputborder.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\imageinputborder.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_timertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\timertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fullsizeborder.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\fullsizeborder.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_mypicstemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\mypicstemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_donetemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\donetemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_imagesearchtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\imagesearchtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_addpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\addpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_mychallengestemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\mychallengestemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_addedpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\addedpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_platformtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\platformtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_instatemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\instatemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_instatemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\instatemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_likedtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\likedtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_linetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xxhdpi\\linetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_persontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\persontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_fill1.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\ic_fill1.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_viewslot.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\viewslot.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_instatemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\instatemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_addpersontemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\addpersontemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_likedtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\likedtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_mypicstemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\mypicstemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_likedtemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\likedtemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_persontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\persontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_platformtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\platformtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_image_full_screen.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_image_full_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dropdowntemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-xhdpi\\dropdowntemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_addedpersontemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\addedpersontemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_twittertemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\twittertemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile_my_bio_fragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_profile_my_bio_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spacebackgroundsmall.jpg.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\spacebackgroundsmall.jpg"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_mypicstemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\mypicstemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_progressbar.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\progressbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_item_timeline.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\recycler_item_timeline.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_addedpersontemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\addedpersontemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_t_e_s_t.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\fragment_t_e_s_t.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_datemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\datemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_submitchallenge.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\submitchallenge.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chtypebutton_selector.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\chtypebutton_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_donetemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\donetemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dropdowntemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\dropdowntemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_profilefragment.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\profilefragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_maincard_artistbackground.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable\\maincard_artistbackground.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_addtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-hdpi\\addtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_test.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\test.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_discovertemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\discovertemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_imagesearchtemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\imagesearchtemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_instatemp.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-anydpi\\instatemp.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_timeline.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\activity_timeline.xml"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_imagesearchtemp.png.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\drawable-mdpi\\imagesearchtemp.png"
+    },
+    {
+        "merged": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\build\\intermediates\\res\\merged\\debug\\layout_recycler_item_slot_detail.xml.flat",
+        "source": "C:\\Users\\mtung\\AndroidStudioProjects\\ShArt\\app\\src\\main\\res\\layout\\recycler_item_slot_detail.xml"
+    }
+]

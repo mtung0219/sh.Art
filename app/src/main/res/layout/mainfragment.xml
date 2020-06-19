@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainFragment_layout"
+    android:layout_width="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        android:background="@color/colorGray"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+        app:scrimAnimationDuration="0">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/whoIsLoggedIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Logged In"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToSubmitChallengePage"
+        android:background="@drawable/textinputborder"
+        style="@style/chtypeunselected"
+        android:textSize="20dp"
+        android:text="Submit a Challenge!" />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/mainFragment_orderBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinputborder"
+        android:clickable="true"
+        android:padding="8dp"
+        android:textStyle="normal"
+        style="@style/word_normal"
+        android:text="Sort by ▼"
+        android:focusable="true" />
+
+        <TextView
+            android:id="@+id/mainFragment_tempTimeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinputborder"
+            android:clickable="true"
+            android:padding="8dp"
+            android:textStyle="normal"
+            style="@style/word_normal"
+            android:layout_centerHorizontal="true"
+            android:text="test out timeline"
+            android:focusable="true" />
+
+     <TextView
+         android:id="@+id/mainFragment_filterBy"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+         android:padding="8dp"
+         android:clickable="true"
+         style="@style/word_normal"
+         android:text="Filter by ▼"
+         android:background="@drawable/textinputborder"
+         android:focusable="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="0dp"
+        android:gravity="center"
+        android:layout_marginVertical="4dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/mainFragment_seriesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/chtypeunselected"
+            android:background="@drawable/chtypebutton_selector"
+            android:layout_marginHorizontal="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Series" />
+        <TextView
+            android:id="@+id/mainFragment_dtiysButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chtypebutton_selector"
+            style="@style/chtypeunselected"
+            android:layout_marginHorizontal="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="DTIYS" />
+        <TextView
+            android:id="@+id/mainFragment_otherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/chtypeunselected"
+            android:background="@drawable/chtypebutton_selector"
+            android:layout_marginHorizontal="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Other" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/recyclerview">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

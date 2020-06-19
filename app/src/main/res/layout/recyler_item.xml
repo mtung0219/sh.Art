@@ -2,54 +2,105 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerView_cardview"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_margin="8dp"
+    android:layout_marginVertical="10dp"
     android:padding= "6dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="8dp">
+    app:cardCornerRadius="4dp"
+    app:cardElevation="0dp">
 
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding= "6dp">
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        style="@style/word_title_alternate"
+        android:text="Art Challenge Name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/maincard_artistbackground"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp" />
+
+    <TextView
+        android:id="@+id/seriesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp"
+        android:text="Series" />
 
     <ImageView
         android:id="@+id/testingPic"
         android:layout_width="match_parent"
-        android:layout_height="199dp"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/testpic" />
+        android:layout_below="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:scaleType="fitCenter" />
 
     <TextView
-        android:id="@+id/textView"
-        style="@style/word_title"
-        android:background="#B3FFFFFF"
-        android:text="Art Challenge Name"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:id="@+id/artistUsername"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/testingPic"
-        android:padding="1dp"
-        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testingPic"
+        app:layout_constraintBottom_toTopOf="@+id/participantCounter"
+        style="@style/word_normal"
+        android:background="@drawable/maincard_artistbackground"
+        android:textSize="16sp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
         android:text="Artist Name" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/participantCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistUsername"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/word_normal"
+        android:background="@drawable/maincard_artistbackground"
+        android:textSize="12sp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:text="3 participants" />
+
+    <ImageView
+        android:id="@+id/addMeToChallenge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignBottom="@+id/testingPic"
-        android:padding="1dp"
-        android:textSize="14dp"
-        android:text="Category"
-        android:layout_alignRight="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/challengecardcirclebutton"
+        android:src="@drawable/addpersontemp"
+        android:contentDescription="Add or remove from challenge." />
 
-</RelativeLayout>
+    <!--<TextView
+        android:id="@+id/datePosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="8dp"
+        android:layout_below="@+id/testingPic"
+        style="@style/word_normal"
+        android:text="Category" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

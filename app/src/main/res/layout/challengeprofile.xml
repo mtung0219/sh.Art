@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/challengeFragment_layout"
+    android:background="?android:windowBackground"
+    android:layout_width="match_parent">
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout_challenge"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appbar_layout_challenge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_layout_challenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:background="#ffffff"
+        app:scrimAnimationDuration="0">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp">
+
+    <TextView
+        android:id="@+id/chpf_title"
+        style="@style/word_title"
+        android:background="#B3FFFFFF"
+        android:text="Art Challenge Name"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="3dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/challengeprofilePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/chpf_title"
+        android:paddingVertical="8dp" />
+
+    <TextView
+        android:id="@+id/chpf_participantNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challengeprofilePic"
+        android:layout_toEndOf="@+id/chpf_participantLogo"
+        android:background="#B3FFFFFF"
+        android:layout_marginEnd="3dp"
+        android:text="32"
+        android:textSize="20sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/chpf_ImInIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challengeprofilePic"
+        android:layout_toEndOf="@+id/chpf_participantNum"
+        android:layout_alignBottom="@+id/chpf_participantNum"
+        android:background="#B3FFFFFF"
+        android:text="(including me)"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textSize="12sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/chpf_participantLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/persontemp"
+        android:layout_alignBottom="@+id/chpf_participantNum"
+        android:layout_marginEnd="4dp"
+        />
+
+    <TextView
+        android:id="@+id/chpf_author_label"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted by: "
+        android:gravity="center"
+        android:layout_toStartOf="@+id/chpf_author"
+        android:layout_alignBottom="@+id/chpf_participantLogo"
+        android:layout_below="@+id/challengeprofilePic" />
+    <TextView
+        android:id="@+id/chpf_author"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="author name"
+        android:gravity="center"
+        android:layout_below="@+id/challengeprofilePic"
+        android:layout_alignBottom="@+id/chpf_participantLogo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"/>
+    <ImageView
+        android:id="@+id/chpf_platformLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platformtemp"
+        android:layout_below="@+id/chpf_participantNum"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/chpf_platform"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:gravity="center"
+        android:layout_alignTop="@+id/chpf_platformLogo"
+        android:layout_toEndOf="@+id/chpf_platformLogo"
+        android:layout_alignBottom="@+id/chpf_platformLogo"
+        android:layout_marginEnd="9dp" />
+    <TextView
+        android:id="@+id/chpf_hashtag_label1"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  # -> "
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/chpf_platformLogo"
+        android:layout_toEndOf="@+id/chpf_platform"
+        android:layout_alignBottom="@+id/chpf_platformLogo"/>
+    <TextView
+        android:id="@+id/chpf_hashtag"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="challenge"
+        android:gravity="center"
+        android:layout_alignTop="@+id/chpf_platformLogo"
+        android:layout_toEndOf="@+id/chpf_hashtag_label1"
+        android:layout_alignBottom="@+id/chpf_platformLogo"/>
+
+    <ImageView
+        android:id="@+id/chpf_dateLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timertemp"
+        android:layout_below="@+id/chpf_platformLogo"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="9dp"
+        />
+    <TextView
+        android:id="@+id/chpf_startdate"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mm/dd/yyyy"
+        android:gravity="center"
+        android:layout_alignTop="@+id/chpf_dateLogo"
+        android:layout_toEndOf="@+id/chpf_dateLogo"
+        android:layout_alignBottom="@+id/chpf_dateLogo"/>
+
+    <TextView
+        android:id="@+id/chpf_numDays_label"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numberposts"
+        android:layout_below="@+id/chpf_dateLogo"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="9dp"/>
+    <TextView
+        android:id="@+id/chpf_numDays"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:layout_alignTop="@+id/chpf_numDays_label"
+        android:layout_alignBottom="@+id/chpf_numDays_label"
+        android:layout_toEndOf="@+id/chpf_numDays_label" />
+
+    <TextView
+        android:id="@+id/chpf_desc"
+        android:background="#B3FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description etc etc"
+        android:gravity="center"
+        android:layout_below="@+id/chpf_numDays"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:id="@+id/doThisChallengeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm in!"
+        style="@style/chtypeunselected"
+        android:background="@drawable/chtypebutton_selector"
+        android:clickable="true"
+        android:layout_below="@+id/chpf_desc"
+        android:focusable="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="9dp"/>
+
+</RelativeLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+</com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/recyclerview_chSlots">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>

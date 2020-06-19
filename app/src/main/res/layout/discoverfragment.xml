@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/discoverFragment_layout"
+    android:background="?android:windowBackground"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/discover_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:padding="8dp"
+        android:text="See what your fellow artists are up to:" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/discover_title"
+        android:id="@+id/recyclerview_discover_submissions">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
+</FrameLayout>

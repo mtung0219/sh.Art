@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".AddSocialMediaActivity">
+
+    <TextView
+        android:id="@+id/addSM_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit your profile:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/addSM_usernamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addSM_title"
+        android:text="Username:"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp" />
+
+    <com.qi.shart.EditTextCustom
+        android:id="@+id/addSM_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinputborder"
+        android:layout_marginTop="6dp"
+        android:maxLength="20"
+        android:hint="Change your sh.Art username."
+        android:textSize="12sp"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/usernameAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Username is available."
+        android:textColor="@color/colorGreen"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/addSM_namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/addSM_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinputborder"
+        android:layout_marginTop="6dp"
+        android:hint="Change your sh.Art name."
+        android:textSize="12sp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/addSM_biolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addSM_title"
+        android:text="Bio:"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/addSM_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinputborder"
+        android:layout_marginTop="6dp"
+        android:hint="Update your bio."
+        android:textSize="12sp"
+        android:inputType="textMultiLine"
+        android:maxLength="150"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/addSM_instagramLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addSM_title"
+        android:text="Instagram:"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/addSM_instagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinputborder"
+        android:layout_marginTop="6dp"
+        android:hint="Enter your instagram username."
+        android:textSize="12sp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/addSM_deviantArtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DeviantArt:"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/addSM_deviantArt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your deviantArt username."
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:layout_marginTop="6dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:background="@drawable/textinputborder" />
+    <TextView
+        android:id="@+id/addSM_twitterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Twitter:"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/addSM_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinputborder"
+        android:hint="Enter your Twitter username."
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <Button
+        android:id="@+id/addSM_submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add links!"
+        android:onClick="writeSMtoProfile"
+        android:layout_below="@+id/addSM_twitterLabel"/>
+
+</LinearLayout>

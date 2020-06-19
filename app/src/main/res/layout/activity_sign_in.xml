@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SignInActivitiy"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/signInUsingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:textSize="25dp"
+        android:text="Sign in using:" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/usingGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signInUsingLabel"/>
+
+    <Button
+        android:id="@+id/usingPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Phone number"
+        android:layout_below="@+id/usingGoogle"/>
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="181dp"
+        android:text="Sign Out" />
+
+    <EditText
+        android:id="@+id/enterVCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usingPhone"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter verification code."
+        android:inputType="number"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/submitVCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enterVCode"
+        android:visibility="invisible"
+        android:text="Submit code." />
+
+
+</RelativeLayout>

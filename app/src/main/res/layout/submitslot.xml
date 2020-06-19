@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/submitslotLayout"
+    >
+
+    <TextView
+        android:id="@+id/submitslot_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload your entry for day #:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitslot_imgChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitslot_title"
+        android:padding="8dp"
+        android:onClick="chooseImage"
+        android:text="Choose Image" />
+    <ImageView
+        android:id="@+id/submitslot_imgDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:padding="8dp"
+        android:layout_below="@+id/submitslot_imgChoose" />
+
+    <TextView
+        android:id="@+id/submitslot_desc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Description:"
+        android:layout_below="@+id/submitslot_imgDisplay"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/submitslot_desc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submitslot_desc_label"
+        android:layout_toRightOf="@+id/submitslot_desc_label"
+        android:ems="10"
+        android:hint="Write a short description (optional)."
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/submitslot_medium_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Medium:"
+        android:layout_below="@+id/submitslot_desc_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/submitslot_flair_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Flair:"
+        android:layout_below="@+id/submitslot_medium_label"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/submitslot_button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkIfSubmissionExists"
+        android:text="Submit Entry"
+        android:layout_below="@+id/submitslot_flair_label"/>
+</RelativeLayout>

@@ -3,6 +3,7 @@ package com.qi.shart;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
@@ -35,6 +36,6 @@ public class DatePickerFragment extends DialogFragment
         this.year = year;
         this.month = month;
         this.day = day;
-        ((TextView) getActivity().findViewById(R.id.startdate_show)).setText(month + "/" + day + "/" + year);
+        ((Button) getActivity().findViewById(R.id.date_time_set)).setText(month + "/" + day + "/" + year);
     }
 }

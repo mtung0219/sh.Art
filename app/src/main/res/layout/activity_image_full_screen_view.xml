@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/fullImageFragment_layout"
+    android:background="?android:windowBackground"
+    android:layout_width="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullImageFragment_innerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:background="@drawable/fullsizeborder"
+    android:clickable="true"
+    tools:context=".imageFullScreenView"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/fullscreen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:text="Artist: Chardesair"
+        android:focusable="true" />
+    <TextView
+        android:id="@+id/fullscreen_ch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullscreen_title"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:text="Challenge Name - Day ##"/>
+    <ImageView
+        android:id="@+id/fullscreen_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/fullscreen_ch"
+        android:padding="8dp" />
+    <TextView
+        android:id="@+id/fullscreen_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullscreen_ImageView"
+        android:padding="8dp"
+        android:text="Desc etc et"/>
+    <ImageView
+        android:id="@+id/fullscreen_likeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullscreen_desc"
+        android:padding="8dp"
+        android:clickable="true"
+        android:src="@drawable/liketemp"
+        android:focusable="true" />
+    <TextView
+        android:id="@+id/fullscreen_likeNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/fullscreen_likeImg"
+        android:layout_below="@+id/fullscreen_desc"
+        android:layout_alignBottom="@+id/fullscreen_likeImg"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="##"/>
+    <TextView
+        android:id="@+id/fullscreen_postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullscreen_desc"
+        android:layout_alignBottom="@+id/fullscreen_likeImg"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="07/19/2020"/>
+
+</RelativeLayout>
+</FrameLayout>

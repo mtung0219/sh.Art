@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,53 +16,16 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        tools:visibility="visible">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:icon="@drawable/ic_fill1"
-            android:text="Challenges" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:icon="@drawable/ic_fill1"
-            android:text="Discover" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:icon="@drawable/ic_fill1"
-            android:text="My Art" />
-
-    </com.google.android.material.tabs.TabLayout>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="writeNewChallenge"
-        android:text="Write to DB test" />
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="goToSubmitChallengePage"
-        android:text="Submit a Challenge!" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerview">
-    </androidx.recyclerview.widget.RecyclerView>
-
-
-
-
 </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/topbar"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navdrawer"
+        android:fitsSystemWindows="true"
+        android:id="@+id/nv">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

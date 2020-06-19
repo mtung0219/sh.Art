@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">ShArt</string>
     <string name="setstartdate">Set start date.</string>
+    <string name="facebook_app_id">591453785078199</string>
+    <string name="fb_login_protocol_scheme">fb591453785078199</string>
+    <string name="testIG">&lt;a href="https://www.instagram.com/chardesair">test ig link&lt;/a></string>
+
     <string-array name="lengthoptions">
         <item>Complete anytime</item>
         <item>Specific dates</item>
@@ -25,4 +29,15 @@
         <item>Other</item>
     </string-array>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alreadydoingchallenge">Already In Challenge</string>
+    <string name="leavechallenge">Leave Challenge</string>
+    <string name="joinchallenge">Join Challenge</string>
+    <string name="numberposts">Number of posts: </string>
+    <string name="signinforchallenge">Sign in / create an account to add this to your list!</string>
+    <string name="submitchallenge_titlehint">Enter a name for your challenge!</string>
+    <string name="submitchallenge_title">Submit a challenge!</string>
+    <string name="submitchallenge_titlelabel">Title:</string>
+    <string name="submissionDetail_allArtists">All Artist Submissions:</string>
+    <string name="submissionDetail_posterSubmission">All Art From </string>
 </resources>
