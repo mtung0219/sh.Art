@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ShArt</string>
+    <string name="setstartdate">Set start date.</string>
+    <string-array name="lengthoptions">
+        <item>Complete anytime</item>
+        <item>Specific dates</item>
+    </string-array>
+    <string-array name="platformOptions">
+        <item>Instagram</item>
+        <item>Amiibo</item>
+        <item>Sketch a Day</item>
+        <item>Pinterest</item>
+        <item>Discord</item>
+        <item>Facebook</item>
+        <item>filler art site 1</item>
+        <item>filler art site 2</item>
+        <item>filler art site 3</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="freqoptions">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Post Anytime</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

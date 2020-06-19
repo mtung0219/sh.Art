@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/submitchallenge_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit a Challenge!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/challengename_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/submitchallenge_title"
+        android:padding="8dp"
+        android:text="Title:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitchallenge_title" />
+
+    <TextView
+        android:id="@+id/platform_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/challengename_label"
+        android:padding="8dp"
+        android:text="Platform:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/hashtag_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/platform_label"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Hashtag Used:"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitchallenge_title" />
+
+
+    <EditText
+        android:id="@+id/challengename_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/challengename_label"
+        android:layout_alignBaseline="@+id/challengename_label"
+        android:layout_below="@+id/submitchallenge_title"
+        android:ems="10"
+        android:hint="Enter a name for your challenge!"
+        android:textSize="12sp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/hashtag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hashtag_label"
+        android:layout_toRightOf="@+id/hashtag_label"
+        android:ems="10"
+        android:hint="The hashtag used to search for your challenge."
+        android:padding="8dp"
+        android:textSize="12sp" />
+    <Spinner
+        android:id="@+id/platform_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Select an option."
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/platform_label"
+        android:layout_alignBottom="@+id/platform_label"/>
+
+    <TextView
+        android:id="@+id/desc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Description:"
+        android:layout_below="@+id/startdate_label"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/desc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/desc_label"
+        android:layout_toRightOf="@+id/desc_label"
+        android:ems="10"
+        android:hint="Write a short description of your challenge."
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/startdate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Start Date:"
+        android:textSize="12sp"
+        android:layout_below="@+id/frequency_label" />
+
+    <Button
+        android:id="@+id/date_time_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/startdate_label"
+        android:layout_alignBottom="@+id/startdate_label"
+        android:onClick="showDatePickerDialog"
+        android:padding="8dp"
+        android:text="Set" />
+
+    <TextView
+        android:id="@+id/startdate_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/date_time_set"
+        android:layout_below="@+id/numEntries_text"
+        android:layout_alignBaseline="@+id/startdate_label"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginBottom="144dp"
+        android:onClick="writeChallenge"
+        android:text="Submit Challenge" />
+
+    <TextView
+        android:id="@+id/numEntries_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/hashtag_label"
+        android:text="Number of Entries:"
+        android:textSize="12sp" />
+    <EditText
+        android:id="@+id/numEntries_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/numEntries_label"
+        android:layout_toRightOf="@+id/numEntries_label"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Numbers of entries this challenge contains."
+        android:padding="8dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/frequency_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/numEntries_label"
+        android:text="Post Frequency:"
+        android:textSize="12sp" />
+    <Spinner
+        android:id="@+id/frequency_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/frequency_label"
+        android:layout_below="@+id/numEntries_text"
+        android:ems="10"
+        android:textSize="12sp" />
+
+</RelativeLayout>

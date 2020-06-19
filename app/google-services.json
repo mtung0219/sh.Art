@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "346783675587",
+    "firebase_url": "https://shart-74bb2.firebaseio.com",
+    "project_id": "shart-74bb2",
+    "storage_bucket": "shart-74bb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346783675587:android:0e68be7b8bc527b0aa5e76",
+        "android_client_info": {
+          "package_name": "com.qi.shart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346783675587-kgihq8caldphe48t2bnnr590g7a0m2sv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qi.shart",
+            "certificate_hash": "c64100214b61c3aafe3d1ae7d947865e9a155d28"
+          }
+        },
+        {
+          "client_id": "346783675587-t602kjcpdip7inkkdqcm2chajcfqemq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIQow8tJG6q3cHXwv9ZYSRP1F-Lk-d5pE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346783675587-t602kjcpdip7inkkdqcm2chajcfqemq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
