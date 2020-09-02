@@ -12,9 +12,11 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.ArrayList;
+
 // Since this is an object collection, use a FragmentStatePagerAdapter,
 // and NOT a FragmentPagerAdapter.
-public class ViewPageAdapter extends FragmentPagerAdapter {
+public class ViewPageAdapter extends FragmentStatePagerAdapter {
     private Fragment[] childFragments;
     private boolean isUserLoggedIn;
     private int tabPosition;
@@ -23,7 +25,8 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
     private TabLayout tL;
 
 
-    public ViewPageAdapter(@NonNull FragmentManager fm, Context ctx, TabLayout tL, String posterID) {
+    public ViewPageAdapter(@NonNull FragmentManager fm, Context ctx, TabLayout tL, String posterID,
+                           profileParticipation PP, ArrayList<challengeSlotDetail> slotDetails) {
         super(fm);
         this.fm = fm;
         this.tL = tL;
@@ -32,13 +35,13 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
         if (isUserLoggedIn) {
             childFragments = new Fragment[] {
                     new mainfragment(),
-                    new discoverfragment(),
+                    profileMyChallenges_fragment.newInstance(PP, slotDetails),
                     profilefragment.getInstance(posterID)
             };
         } else {
             childFragments = new Fragment[] {
                     new mainfragment(),
-                    new discoverfragment(),
+                    new logInFragment(),
                     new logInFragment()
             };
         }

@@ -377,7 +377,8 @@ public class timelineActivity extends AppCompatActivity implements View.OnClickL
         } //at this point mFullListTemp contains only active series we are doing.
 
 
-        mAdapterTimeline = new recyclerAdapter_timeline(ctx, 10, dateArray, mFullListTemp);
+        mAdapterTimeline = new recyclerAdapter_timeline(ctx, 10, dateArray, mFullListTemp,
+                null,null);
         mRecyclerView.setAdapter(mAdapterTimeline);
         final CustomLinearLayoutManagerSlow CLLM = new CustomLinearLayoutManagerSlow(ctx);
         final LinearLayoutManager LLM = new LinearLayoutManager(ctx);

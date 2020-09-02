@@ -280,42 +280,19 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
     </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:layout_height="match_parent"
+        <TextView
+        android:id="@+id/pf_submissions_noEntries"
         android:layout_width="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:background="@color/colorWhite"
-        android:id="@+id/profilepager">
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/profiletabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#5869C6"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            tools:visibility="visible">
-
-            <com.google.android.material.tabs.TabItem
-                style="@style/MyCustomTabTextAppearance"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:icon="@drawable/mypicstemp"
-                android:text="My Art" />
-
-            <com.google.android.material.tabs.TabItem
-                style="@style/MyCustomTabTextAppearance"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:icon="@drawable/mychallengestemp"
-                android:text="My Challenges" />
-
-
-        </com.google.android.material.tabs.TabLayout>
-
-    </androidx.viewpager.widget.ViewPager>
-
+        android:layout_height="wrap_content">
+        </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pf_submissions_noEntries"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:id="@+id/recyclerview_pf_submissions">
+            </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

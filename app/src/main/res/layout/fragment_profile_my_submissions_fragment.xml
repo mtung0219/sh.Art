@@ -10,8 +10,7 @@
     <TextView
         android:id="@+id/pf_submissions_noEntries"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
     </TextView>
 
     <androidx.recyclerview.widget.RecyclerView

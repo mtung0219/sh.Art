@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
+import android.graphics.Point;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -13,9 +14,11 @@ import android.text.Html;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -64,6 +67,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -97,6 +101,7 @@ public class profilefragment extends Fragment implements View.OnClickListener {
     private StorageReference storageReference;
     private StorageReference ref;
     private byte[] BAtest;
+    private TextView noEntries;
 
     public static profilefragment getInstance(String posterID) {
         profilefragment fragment = new profilefragment();
@@ -130,6 +135,7 @@ public class profilefragment extends Fragment implements View.OnClickListener {
         super.onCreateView(inflater, container, savedInstanceState);
         rootView = inflater.inflate(R.layout.profilefragment, container, false);
         profpic = rootView.findViewById(R.id.imageview_account_profile);
+        noEntries = rootView.findViewById(R.id.pf_submissions_noEntries);
         //changeProfilePic = rootView.findViewById(R.id.changeProfilePicture);
 
         final LinearLayout LL = rootView.findViewById(R.id.lltest1);
@@ -153,15 +159,7 @@ public class profilefragment extends Fragment implements View.OnClickListener {
         //setSMLinks();
         //pullChallengesDoing();
         //retrieveFromFirebase();
-
         return rootView;
-    }
-
-    @Override
-    public void onResume() {
-        Log.d("FRAGMENT","PROFILE FRAGMENT RESUMED");
-        //setUpTabs();
-        super.onResume();
     }
 
     private void setUpTabs() {
@@ -182,16 +180,19 @@ public class profilefragment extends Fragment implements View.OnClickListener {
         numPosts.setText(String.valueOf(slotDetails.size()));
         numLikes.setText(String.valueOf(totalLikes));
 
-        profilePager = rootView.findViewById(R.id.profilepager);
+        submissionsAdapter();
+        /*profilePager = rootView.findViewById(R.id.profilepager);
         profilePager.setOffscreenPageLimit(0);
         Log.d("TAG","SLOTDETAILS SIZE IS " + String.valueOf(slotDetails.size()));
 
-        viewPageAdapterProfile = new ViewPageAdapterProfile(getFragmentManager(), ctx, PP, slotDetails, posterID, posterName);
+        viewPageAdapterProfile = new ViewPageAdapterProfile(getChildFragmentManager(), ctx, PP, slotDetails, posterID, posterName);
         profilePager.setAdapter(viewPageAdapterProfile);
 
         TabLayout tabLayout = rootView.findViewById(R.id.profiletabs);
-        tabLayout.setupWithViewPager(profilePager);
+        tabLayout.setupWithViewPager(profilePager);*/
     }
+
+
 
     private void setSMLinks() {
         String instagram = pf.getInstagram();
@@ -281,7 +282,34 @@ public class profilefragment extends Fragment implements View.OnClickListener {
             }
         });
     }
+    private void submissionsAdapter() {
+        Configuration configuration = Objects.requireNonNull(getActivity()).getResources().getConfiguration();
+        Display display = ((WindowManager) ctx.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int widthWM = size.x;
+        float configDensity = configuration.densityDpi;
+        int screenWidthDp = configuration.screenWidthDp;
+        float factor = Objects.requireNonNull(getContext()).getResources().getDisplayMetrics().density;
+        //int varWidth =(int) ( factor * screenWidthDp);
+        Log.d("TAG","Screen width dp is " + screenWidthDp + " and density from metrics is "
+                + factor + " and from config is " + configDensity + " and widthWM is " + widthWM);
 
+        int useThisWidth = (widthWM - 4) / 3;
+        Log.d("TAG","WTF???");
+        if (slotDetails.size()==0) {
+            noEntries.setText("No Submissions so far!");
+        } else {
+            recyclerAdapter_pfSubmissions mAdapterSubmissions = new recyclerAdapter_pfSubmissions(getContext(), slotDetails, useThisWidth, posterID,
+                    posterName);
+            // Connect the adapter with the RecyclerView.
+            mRecyclerViewSubmissions.setAdapter(mAdapterSubmissions);
+            // Give the RecyclerView a default layout manager.
+            mRecyclerViewSubmissions.setLayoutManager(new GridLayoutManager(ctx, 3));
+        }
+
+
+    }
     @Override
     public void onClick(View view) {
         switch (view.getId()) {

@@ -66,7 +66,8 @@ public class recyclerAdapter_timeline extends RecyclerView.Adapter<recyclerAdapt
     private ArrayList<ArrayList<Challenge>> challengeListDateSpread;
     private ArrayList<ArrayList<String>> challengeListDateSpreadName;
 
-    public recyclerAdapter_timeline(Context context, int num, ArrayList<Date> dateArray, ArrayList<Challenge> mSeriesChallenges) {
+    public recyclerAdapter_timeline(Context context, int num, ArrayList<Date> dateArray, ArrayList<Challenge> mSeriesChallenges,
+        ArrayList<ArrayList<Challenge>> challengeListDateSpread, ArrayList<ArrayList<String>> challengeListDateSpreadName) {
         mInflater = LayoutInflater.from(context);
         this.cxt = context;
         this.num = num;
@@ -76,8 +77,9 @@ public class recyclerAdapter_timeline extends RecyclerView.Adapter<recyclerAdapt
         this.monthFormat = new SimpleDateFormat("MMMM");
         this.yearFormat = new SimpleDateFormat("yyyy");
         this.lastDate = dateArray.get(dateArray.size()-1);
+        this.challengeListDateSpread = challengeListDateSpread;
+        this.challengeListDateSpreadName = challengeListDateSpreadName;
 
-        fillChallengeDateSpread();
     }
 
     public void fillChallengeDateSpread() {
@@ -99,14 +101,12 @@ public class recyclerAdapter_timeline extends RecyclerView.Adapter<recyclerAdapt
             c1.setTime(a);
             for (int j = 0; j < mSeriesChallenges.size(); j++) {
                 Challenge ch = mSeriesChallenges.get(j);
-                //Log.d("TAG","DATE IS " + ch.getStartDate());
                 c2.setTime(ch.getStartDate());
                 boolean sameDay = c1.get(Calendar.DAY_OF_YEAR) == c2.get(Calendar.DAY_OF_YEAR) &&
                         c1.get(Calendar.YEAR) == c2.get(Calendar.YEAR);
                 if (sameDay) {
                     int numEntries = ch.getnumEntries();
                     int counter = 0;
-                    Log.d("TAG","YES?????????????" + ch.getStartDate() + " " + a);
                     for (int iCopy = i; iCopy < Math.min(i + numEntries, dateArray.size()); iCopy++) {
                         challengeListDateSpread.get(iCopy).add(ch);
                         String dayLabel = " Day " + counter;

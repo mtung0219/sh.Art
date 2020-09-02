@@ -23,33 +23,44 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.signature.ObjectKey;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Objects;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public abstract class BaseActivity extends AppCompatActivity {
     private NavigationView nv;
     private DrawerLayout d1;
     private FirebaseStorage firestoreStorage = FirebaseStorage.getInstance();
-    private FirebaseFirestore firestoreDB;
+    private FirebaseFirestore firestoreDB = FirebaseFirestore.getInstance();;
     private String docID, posterID;
     private Profile pf;
     private boolean isUserLoggedIn;
     private TabLayout tabLayout;
+    private CircleImageView profpic;
+    private ArrayList<challengeSlotDetail> slotDetails;
+    private profileParticipation PP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,8 +110,14 @@ public abstract class BaseActivity extends AppCompatActivity {
         //ActionBarDrawerToggle t = new ActionBarDrawerToggle(this, d1,R.string.Open,"Close");
         //d1.addDrawerListener(t);
         isUserLoggedIn = PreferenceData.getUserLoggedInStatus(this);
-
-        tabSetup();
+        if (isUserLoggedIn) {
+            pullProfile();
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            posterID = user.getUid();
+        } else {
+            posterID = "none";
+        }
+        pullChallengesDoing();
 
         nv = findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -160,7 +177,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     private void pullProfile() {
-        firestoreDB = FirebaseFirestore.getInstance();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         docID = user.getUid();
         DocumentReference docpath = firestoreDB.collection("profiles").document(docID);
@@ -175,17 +191,70 @@ public abstract class BaseActivity extends AppCompatActivity {
                     Log.d("TAG","profile toObject successful..");
 
                     TextView nvUsername = nv.findViewById(R.id.navDrawer_username);
+                    profpic = nv.findViewById(R.id.navDrawer_profPic);
                     nvUsername.setText(pf.getUsername());
-                    //retrieveFromFirebase();
-                    tabSetup();
-                    //retrieveFromFirebase();
+                    retrieveFromFirebase();
                 } else {
                     Log.d("TAG","ERROR GETTING PROFILE: ", task.getException());
                 }
             }
         });
     }
+    private void pullChallengesDoing() {
+        DocumentReference docpath = firestoreDB.collection("profileParticipation").document(posterID);
+        docpath.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    PP = task.getResult().toObject(profileParticipation.class);
+                    pullSubmissions();
 
+                    Log.d("TAG","profile toObject successful..");
+                } else {
+                    Log.d("TAG","ERROR GETTING PROFILE: ", task.getException());
+                }
+            }
+        });
+    }
+    private void pullSubmissions() {
+        slotDetails = new ArrayList<>();
+        CollectionReference sortRef = firestoreDB.collection(posterID);
+        Query query = sortRef.orderBy("ts", Query.Direction.DESCENDING);
+        query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        slotDetails.add(document.toObject(challengeSlotDetail.class));
+                    }
+                    tabSetup();
+                } else {
+                    Log.d("TAG", "ERROR GETTING DOCUMENTS: ", task.getException());
+                }
+            }
+        });
+    }
+
+    //pulling profile picture
+    private void retrieveFromFirebase() {
+        long cacheKey = pf.getProfPicCache();
+        String imagePath = "profilePictures/" + posterID;
+        StorageReference storageRef = firestoreStorage.getReference();
+        StorageReference imageRef = storageRef.child(imagePath);
+        try {
+            Glide.with(this)
+                    .load(imageRef)
+                    .signature(new ObjectKey(String.valueOf(cacheKey)))
+                    .error(
+                            Glide.with(this)
+                                    .load(R.mipmap.ic_launcher_round)
+                    )
+                    .into(profpic);
+        } catch (Exception e) {
+            profpic.setImageResource(R.mipmap.ic_launcher_round);
+            Log.e("TAG", "IMG PULL FAILED", e);
+        }
+    }
     public void switchContent(int id, Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .replace(id, fragment)
@@ -202,23 +271,17 @@ public abstract class BaseActivity extends AppCompatActivity {
         final CustomViewPager mainpager = findViewById(R.id.mainpager);
         tabLayout = findViewById(R.id.tabs);
 
-        if (isUserLoggedIn) {
-            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-            posterID = user.getUid();
-        } else {
-            posterID = "none";
-        }
-
-
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        /*tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                Log.d("viewpageAdapter","TAB SELECT");
+
             }
+
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-                Log.d("viewpageAdapter","TAB UNSELECTED");
+
             }
+
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
                 Log.d("viewpageAdapter","TAB RESELECTED " + tab.getPosition());
@@ -231,7 +294,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                         break;
                     case 1:
                         getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.discoverFragment_layout, new discoverfragment())
+                                .replace(R.id.fragment_myChecklist_layout, profileMyChallenges_fragment.newInstance(PP, slotDetails))
                                 .commit();
                         break;
                     case 2:
@@ -242,8 +305,8 @@ public abstract class BaseActivity extends AppCompatActivity {
                 }
 
             }
-        });
-        mainpager.setAdapter(new ViewPageAdapter(getSupportFragmentManager(),this, tabLayout, posterID));
+        });*/
+        mainpager.setAdapter(new ViewPageAdapter(getSupportFragmentManager(),this, tabLayout, posterID,PP,slotDetails));
         tabLayout.setupWithViewPager(mainpager);
         for (int i = 0; i < tabLayout.getTabCount(); i++ ) {
             switch (i) {

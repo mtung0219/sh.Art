@@ -45,6 +45,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class timelineFragment extends Fragment implements View.OnClickListener {
 
@@ -70,25 +71,25 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
     private final int bufferEitherSide = 4;
     private profileParticipation PP;
     private int currPosition;
+    private ArrayList<ArrayList<Challenge>> challengeListDateSpread;
+    private ArrayList<ArrayList<String>> challengeListDateSpreadName;
 
     public timelineFragment() {
         // Required empty public constructor
     }
 
-    public static timelineFragment newInstance(ArrayList<Challenge> mFullChallengesList1) {
+    public static timelineFragment newInstance() {
         timelineFragment fragment = new timelineFragment();
-        Bundle args = new Bundle();
-        args.putParcelableArrayList("completeChallenges",mFullChallengesList1);
-        fragment.setArguments(args);
+        //Bundle args = new Bundle();
+        //args.putParcelableArrayList("completeChallenges",mFullChallengesList1);
+        //fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mFullChallengesList = getArguments().getParcelableArrayList("completeChallenges");
-        }
+        //if (getArguments() != null) mFullChallengesList = getArguments().getParcelableArrayList("completeChallenges");
     }
 
     @Override
@@ -108,7 +109,8 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
         seriesList = rootView.findViewById(R.id.seriesList);
 
         timelineImage.setOnClickListener(this);
-        profileParticipationPull();
+        initialCardPull();
+        //profileParticipationPull();
         return rootView;
     }
 
@@ -127,6 +129,27 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
             default:
                 break;
         }
+    }
+
+    public void initialCardPull() {
+        mFullChallengesList = new ArrayList<>();
+        Query query = FirebaseFirestore.getInstance().collection("challenges");
+        query = query.orderBy("timeStamp", Query.Direction.DESCENDING);
+        query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        Challenge ch = document.toObject(Challenge.class);
+                        ch.setChID(document.getId());
+                        mFullChallengesList.add(ch);
+                    }
+                    profileParticipationPull();
+                } else {
+                    Log.d("TAG", "ERROR GETTING INITIAL CARD PULL: ", task.getException());
+                }
+            }
+        });
     }
 
     public void goToDTIYSpage(int currPosition) {
@@ -172,7 +195,7 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
         return (widthWM / 2);
     }
     public void setUpDates() {
-        dateArray = new ArrayList<Date>();
+        dateArray = new ArrayList<>();
         Calendar c = Calendar.getInstance();
         Date today = new Date();
 
@@ -336,6 +359,42 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    private void doChallengeDateSpread(ArrayList<Challenge> mFullListTemp) {
+        challengeListDateSpread = new ArrayList<>(dateArray.size());
+        challengeListDateSpreadName = new ArrayList<>(dateArray.size());
+
+        //initialize challengeListDateSpread;
+        for (int i = 0;i < dateArray.size();i++) {
+            challengeListDateSpread.add(new ArrayList<Challenge>());
+            challengeListDateSpreadName.add(new ArrayList<String>());
+        }
+
+        Calendar c = Calendar.getInstance();
+        Calendar c1 = Calendar.getInstance();
+        Calendar c2 = Calendar.getInstance();
+        c.setTime(new Date());
+        for (int i = 0; i < dateArray.size(); i++) {
+            Date a = dateArray.get(i);
+            c1.setTime(a);
+            for (int j = 0; j < mFullListTemp.size(); j++) {
+                Challenge ch = mFullListTemp.get(j);
+                c2.setTime(ch.getStartDate());
+                boolean sameDay = c1.get(Calendar.DAY_OF_YEAR) == c2.get(Calendar.DAY_OF_YEAR) &&
+                        c1.get(Calendar.YEAR) == c2.get(Calendar.YEAR);
+                if (sameDay) {
+                    int numEntries = ch.getnumEntries();
+                    int counter = 0;
+                    for (int iCopy = i; iCopy < Math.min(i + numEntries, dateArray.size()); iCopy++) {
+                        challengeListDateSpread.get(iCopy).add(ch);
+                        String dayLabel = " Day " + counter;
+                        challengeListDateSpreadName.get(iCopy).add(dayLabel);
+                        //adding day1 day2 .. day 30 etc.
+                        counter+=1;
+                    }
+                }
+            }
+        }
+    }
 
     private void pullSubmissions() { //for series
         ArrayList<String> ppChallenges = PP.getChallengesParticipating();
@@ -357,7 +416,10 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
             }
         } //at this point mFullListTemp contains only active series we are doing.
 
-        mAdapterTimeline = new recyclerAdapter_timeline(ctx, 10, dateArray, mFullListTemp);
+        doChallengeDateSpread(mFullListTemp);
+
+        mAdapterTimeline = new recyclerAdapter_timeline(ctx, 10, dateArray, mFullListTemp,
+                challengeListDateSpread, challengeListDateSpreadName);
         mRecyclerView.setAdapter(mAdapterTimeline);
         final CustomLinearLayoutManagerSlow CLLM = new CustomLinearLayoutManagerSlow(ctx);
         final LinearLayoutManager LLM = new LinearLayoutManager(ctx);
@@ -367,7 +429,7 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
         mRecyclerView.setItemViewCacheSize(40);
         mRecyclerView.setLayoutManager(CLLM);
 
-        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        /*mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
@@ -408,18 +470,16 @@ public class timelineFragment extends Fragment implements View.OnClickListener {
                         //String monthName =mAdapterTimeline.getMonthName(centerPos);
                         //String yearNum = mAdapterTimeline.getYearNumber(centerPos);
 
-
                         dateNumSelected.setText(num);
                         monthNameSelected.setText(monthName);
                         timeTitle.setText(monthName + " " + num + " " + yearNum);
                         seriesList.setText(seriesListString);
                     }
-
                     prevCenterPos = centerPos;
                 }
 
             }
-        });
+        });*/
 
     }
 }
